@@ -227,3 +227,270 @@ dd {
     column-gap: 2.5rem;
   }
 }
+
+/* Shared visual language for the calm, private marketing site. */
+:root {
+  --bg: #faf8f3;
+  --surface: #faf8f3;
+  --text: #313949;
+  --muted: #707582;
+  --line: #dedbd3;
+  --accent: #1e2a4a;
+  --focus: #52668d;
+  --radius: 0;
+  --space-4: 2.5rem;
+  --space-5: 4.5rem;
+  --max-width: 40rem;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", sans-serif;
+  line-height: 1.7;
+}
+
+.container {
+  width: min(calc(100% - 2.5rem), var(--max-width));
+}
+
+.site-header {
+  padding: 2rem 0 0;
+}
+
+.site-header-home {
+  padding-top: 1.5rem;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  color: var(--accent);
+  text-decoration: none;
+}
+
+.site-header .brand + h1 {
+  margin-top: var(--space-4);
+}
+
+.app-icon {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 0.68rem;
+}
+
+.wordmark,
+.eyebrow {
+  margin: 0;
+  color: var(--accent);
+  font-size: 1rem;
+  font-weight: 650;
+  letter-spacing: 0;
+  text-transform: none;
+}
+
+.site-nav {
+  margin-bottom: var(--space-4);
+  padding-top: 0;
+}
+
+h1,
+h2,
+h3 {
+  color: var(--accent);
+  font-weight: 650;
+  letter-spacing: 0;
+  line-height: 1.16;
+}
+
+h1 {
+  font-size: clamp(2.25rem, 8vw, 3.55rem);
+}
+
+h2 {
+  font-size: clamp(1.35rem, 5vw, 1.75rem);
+}
+
+.hero {
+  padding-top: var(--space-5);
+}
+
+.lead {
+  max-width: 34rem;
+  margin-top: var(--space-3);
+  color: var(--text);
+  font-size: clamp(1.2rem, 4vw, 1.45rem);
+  line-height: 1.55;
+}
+
+.quiet-note,
+.meta-line {
+  margin-top: var(--space-2);
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
+.screenshots {
+  display: grid;
+  justify-items: center;
+  gap: 2rem;
+  padding-top: var(--space-5);
+}
+
+figure {
+  margin: 0;
+}
+
+.thread-screen,
+.write-screen {
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: 2rem;
+  background: var(--cream, #ede5d6);
+}
+
+.thread-screen {
+  width: min(100%, 19rem);
+}
+
+.write-screen {
+  width: min(75%, 14rem);
+}
+
+.thread-screen img,
+.write-screen img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.write-screen figcaption {
+  padding: 0.65rem 0.9rem 0.75rem;
+  color: var(--muted);
+  font-size: 0.9rem;
+  line-height: 1.4;
+}
+
+.reading-section,
+.excluded-section,
+.pricing {
+  padding-top: var(--space-5);
+}
+
+.reading-section {
+  font-size: clamp(1.18rem, 4vw, 1.35rem);
+  line-height: 1.55;
+}
+
+.reading-section p + p {
+  margin-top: 2.1rem;
+}
+
+.excluded-section {
+  border-top: 1px solid var(--line);
+  margin-top: var(--space-5);
+}
+
+.excluded-section > p {
+  margin-top: var(--space-2);
+}
+
+.plain-list {
+  display: grid;
+  gap: 0.45rem;
+  margin: var(--space-3) 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.plain-list li::before {
+  content: "- ";
+  color: var(--muted);
+}
+
+.pricing {
+  padding-bottom: var(--space-5);
+}
+
+.pricing h2 {
+  max-width: 31rem;
+}
+
+.pricing p {
+  margin-top: var(--space-2);
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
+.content {
+  padding-top: var(--space-5);
+  padding-bottom: var(--space-5);
+}
+
+.card {
+  padding: var(--space-4) 0 0;
+  border: 0;
+  border-top: 1px solid var(--line);
+  border-radius: 0;
+  background: transparent;
+}
+
+.card:first-child {
+  padding-top: 0;
+  border-top: 0;
+}
+
+.site-footer {
+  margin-top: 0;
+  padding: var(--space-3) 0 2rem;
+}
+
+.footer-content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 0.75rem 1.5rem;
+}
+
+.footer-links {
+  gap: 0.5rem 1.1rem;
+  font-size: 0.9rem;
+}
+
+.copyright {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.8rem;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+}
+
+@media (min-width: 40rem) {
+  .screenshots {
+    grid-template-columns: 1.3fr 0.9fr;
+    align-items: end;
+    justify-items: start;
+  }
+
+  .thread-screen {
+    width: 18rem;
+    justify-self: center;
+  }
+
+  .write-screen {
+    width: 12rem;
+    justify-self: center;
+  }
+
+  .plain-list {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    column-gap: var(--space-4);
+  }
+}
