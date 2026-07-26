@@ -363,13 +363,6 @@ figure {
   height: auto;
 }
 
-.write-screen figcaption {
-  padding: 0.65rem 0.9rem 0.75rem;
-  color: var(--muted);
-  font-size: 0.9rem;
-  line-height: 1.4;
-}
-
 .reading-section,
 .excluded-section,
 .pricing {
