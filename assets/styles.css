@@ -474,19 +474,19 @@ figure {
 
 @media (min-width: 40rem) {
   .screenshots {
-    grid-template-columns: 1.3fr 0.9fr;
+    grid-template-columns: 18rem 12rem;
     align-items: end;
-    justify-items: start;
+    justify-content: start;
   }
 
   .thread-screen {
     width: 18rem;
-    justify-self: center;
+    justify-self: start;
   }
 
   .write-screen {
     width: 12rem;
-    justify-self: center;
+    justify-self: start;
   }
 
   .plain-list {
