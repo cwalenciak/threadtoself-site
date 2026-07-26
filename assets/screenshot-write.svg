@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 280 620" role="img" aria-label="Thread to Self write screen preview">
+  <rect width="280" height="620" fill="#f1eadb"/>
+  <rect x="0" y="0" width="280" height="76" fill="#ffffff" opacity="0.95"/>
+  <text x="140" y="48" text-anchor="middle" fill="#1e2a4a" font-size="24" font-family="Helvetica, Arial, sans-serif">New Message</text>
+
+  <rect x="20" y="108" width="240" height="320" rx="18" fill="#ffffff"/>
+  <text x="36" y="152" fill="#374257" font-size="20" font-family="Helvetica, Arial, sans-serif">Write something down</text>
+  <text x="36" y="178" fill="#374257" font-size="20" font-family="Helvetica, Arial, sans-serif">and move on.</text>
+  <text x="36" y="216" fill="#8a919f" font-size="16" font-family="Helvetica, Arial, sans-serif">No labels. No folders.</text>
+  <text x="36" y="238" fill="#8a919f" font-size="16" font-family="Helvetica, Arial, sans-serif">No pressure to organize.</text>
+
+  <rect x="20" y="454" width="240" height="58" rx="29" fill="#1e2a4a"/>
+  <text x="140" y="490" text-anchor="middle" fill="#ffffff" font-size="20" font-family="Helvetica, Arial, sans-serif">Send</text>
+
+  <circle cx="236" cy="38" r="12" fill="#1e2a4a" opacity="0.12"/>
+</svg>
