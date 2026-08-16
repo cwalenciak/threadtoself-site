@@ -260,6 +260,13 @@ body {
   padding-top: 1.5rem;
 }
 
+.header-home-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-3);
+}
+
 .brand {
   display: flex;
   align-items: center;
@@ -331,8 +338,9 @@ h2 {
 
 .app-store-link {
   display: block;
+  flex: 0 0 auto;
   width: fit-content;
-  margin: 3rem auto 0;
+  margin: 0;
   border-radius: 0.6rem;
   line-height: 0;
   transition: opacity 160ms ease, transform 160ms ease;
@@ -340,7 +348,7 @@ h2 {
 
 .app-store-link img {
   display: block;
-  width: 11.25rem;
+  width: 8rem;
   height: auto;
 }
 
@@ -356,6 +364,30 @@ h2 {
 @media (prefers-reduced-motion: reduce) {
   .app-store-link {
     transition: none;
+  }
+}
+
+@media (max-width: 23rem) {
+  .header-home-content {
+    gap: 0.6rem;
+  }
+
+  .site-header-home .brand {
+    gap: 0.55rem;
+  }
+
+  .site-header-home .app-icon {
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 0.58rem;
+  }
+
+  .site-header-home .wordmark {
+    font-size: 0.9rem;
+  }
+
+  .app-store-link img {
+    width: 7rem;
   }
 }
 
