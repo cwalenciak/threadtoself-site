@@ -332,7 +332,7 @@ h2 {
 .app-store-link {
   display: block;
   width: fit-content;
-  margin-top: var(--space-4);
+  margin: 3rem auto 0;
   border-radius: 0.6rem;
   line-height: 0;
   transition: opacity 160ms ease, transform 160ms ease;
