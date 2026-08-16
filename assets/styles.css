@@ -329,6 +329,36 @@ h2 {
   font-size: 0.95rem;
 }
 
+.app-store-link {
+  display: block;
+  width: fit-content;
+  margin-top: var(--space-4);
+  border-radius: 0.6rem;
+  line-height: 0;
+  transition: opacity 160ms ease, transform 160ms ease;
+}
+
+.app-store-link img {
+  display: block;
+  width: 11.25rem;
+  height: auto;
+}
+
+.app-store-link:hover {
+  opacity: 0.86;
+  transform: translateY(-1px);
+}
+
+.app-store-link:active {
+  transform: translateY(0);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .app-store-link {
+    transition: none;
+  }
+}
+
 .screenshots {
   display: grid;
   justify-items: center;
